@@ -11,14 +11,12 @@ function App() {
     <div className='App'>
       <h1>Chuck Norris Jokes</h1>
       <div className='main'>
-        <img src={Chuck} alt='' />
-        <div className='content'>
+        <div className='row'>
+          <img src={Chuck} alt='' />
           <Categories />
-          <Route
-            path='/'
-            render={(props) => <Joke key={props.location.key} />}
-          />
         </div>
+        <Route path='/' render={(props) => <Joke key={props.location.key} />} />
+        {/* </div> */}
       </div>
     </div>
   );

@@ -23,14 +23,14 @@ function Categories() {
   };
 
   return (
-    <>
+    <div>
       <h2>Categories</h2>
       <div className='categories'>
         {state.categories.map((category) => {
           return <CategoryItem key={category} category={category} />;
         })}
       </div>
-    </>
+    </div>
   );
 }
 
