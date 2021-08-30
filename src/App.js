@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
+import Chuck from './chuck.png';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <h1>Chuck Norris Jokes</h1>
+      <div className='main'>
+        <img src={Chuck} alt='' />
+        <div className='content'>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
+          unde explicabo, ex earum debitis excepturi perferendis! Magnam quaerat
+          repudiandae quidem, soluta sint ab recusandae maiores, provident
+          voluptate, exercitationem quas consequatur!
+        </div>
+      </div>
     </div>
   );
 }
