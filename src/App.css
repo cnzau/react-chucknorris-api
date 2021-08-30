@@ -2,18 +2,61 @@ body {
   padding: 1em;
   background-color: #eeeeee;
 }
+
 h1 {
   text-align: center;
+
+  border-bottom: #000 1px dashed;
+
 }
+
 .main {
-  width: 100%;
-  display: flex;
-  padding: 2em;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
 }
-.main img{
-  width: 15%;
-}.content {
-  width: 75%;
-  margin-right: 15%;
+
+.content {
   padding: 1em;
+}
+
+.categories {
+  display: block;
+}
+
+.category-item {
+  display: inline-block;
+  background-color: #fff;
+  margin: 2px 3.5px;
+  padding: 2px 0.5em;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+blockquote {
+  text-align: justify;
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: .5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  font: 16px/1.5 "Courier New", Arial, sans-serif;
+  display: block;
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: .1em;
+  margin-right: .25em;
+  vertical-align: -.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+p {
+  text-align: justify;
 }

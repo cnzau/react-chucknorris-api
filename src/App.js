@@ -1,6 +1,10 @@
-import './App.css';
-import axios from 'axios';
+import React from 'react';
+import { Route } from 'react-router-dom';
 import Chuck from './chuck.png';
+import Categories from './components/Categories';
+import Joke from './components/Joke';
+
+import './App.css';
 
 function App() {
   return (
@@ -9,10 +13,11 @@ function App() {
       <div className='main'>
         <img src={Chuck} alt='' />
         <div className='content'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
-          unde explicabo, ex earum debitis excepturi perferendis! Magnam quaerat
-          repudiandae quidem, soluta sint ab recusandae maiores, provident
-          voluptate, exercitationem quas consequatur!
+          <Categories />
+          <Route
+            path='/'
+            render={(props) => <Joke key={props.location.key} />}
+          />
         </div>
       </div>
     </div>
