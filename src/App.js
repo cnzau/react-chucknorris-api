@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Redirect, Switch } from 'react-router-dom';
 import Chuck from './chuck.png';
 import Categories from './components/Categories';
 import Joke from './components/Joke';
@@ -15,8 +15,16 @@ function App() {
           <img src={Chuck} alt='' />
           <Categories />
         </div>
-        <Route path='/' render={(props) => <Joke key={props.location.key} />} />
-        {/* </div> */}
+        <Switch>
+          {['/', '/random', '/random/'].map((path) => (
+            <Route
+              key={path}
+              strict
+              path={path}
+              render={(props) => <Joke key={props.location.key} />}
+            />
+          ))}
+        </Switch>
       </div>
     </div>
   );

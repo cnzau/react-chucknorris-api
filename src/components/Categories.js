@@ -5,7 +5,6 @@ import CategoryItem from './CategoryItem';
 function Categories() {
   const [state, setState] = useState({
     categories: [],
-    clicked: '',
   });
 
   useEffect(() => {
@@ -21,7 +20,6 @@ function Categories() {
       categories: categories.data,
     });
   };
-
   return (
     <div>
       <h2>Categories</h2>
