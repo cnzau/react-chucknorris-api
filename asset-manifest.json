@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-chucknorris-api/static/css/main.24dd8510.chunk.css",
-    "main.js": "/react-chucknorris-api/static/js/main.58c33577.chunk.js",
-    "main.js.map": "/react-chucknorris-api/static/js/main.58c33577.chunk.js.map",
+    "main.js": "/react-chucknorris-api/static/js/main.bf6e84ac.chunk.js",
+    "main.js.map": "/react-chucknorris-api/static/js/main.bf6e84ac.chunk.js.map",
     "runtime-main.js": "/react-chucknorris-api/static/js/runtime-main.1e37b532.js",
     "runtime-main.js.map": "/react-chucknorris-api/static/js/runtime-main.1e37b532.js.map",
     "static/js/2.59889ecb.chunk.js": "/react-chucknorris-api/static/js/2.59889ecb.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.1e37b532.js",
     "static/js/2.59889ecb.chunk.js",
     "static/css/main.24dd8510.chunk.css",
-    "static/js/main.58c33577.chunk.js"
+    "static/js/main.bf6e84ac.chunk.js"
   ]
 }
